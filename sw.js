@@ -10,4 +10,4 @@ workbox.clientsClaim();
 window.addEventListener('beforeinstallprompt', function(event) {
     console.log("before install prompt");
     event.prompt();
-})
+});
