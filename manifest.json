@@ -2,7 +2,7 @@
   "name": "amai",
   "short_name": "amai",
   "icons": [{
-    "src": "ihttps://diz36nn4q02zr.cloudfront.net/webapi/images/t/128/128/ShopIcon/88/0/184954",
+    "src": "https://diz36nn4q02zr.cloudfront.net/webapi/images/t/128/128/ShopIcon/88/0/184954",
     "sizes": "128x128",
     "type": "image/png"
   }, {
