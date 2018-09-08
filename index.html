@@ -121,5 +121,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-redux/5.0.7/react-redux.min.js"></script>
 <script src="https://cms.cdn.91app.com/theme/0/master_58aec74/javascript/nineyi.bl.module.js"></script>
 <script src="https://cms.cdn.91app.com/theme/0/master_58aec74/javascript/nineyi.themeCore.mobile.client.module.js"></script>
+<script>
+    // Check that service workers are registered
+    if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', function(){
+            navigator.serviceWorker.register('/pwa-poc/sw.js');
+        });
+    }
+</script>
 </body>
 </html>
