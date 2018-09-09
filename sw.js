@@ -1,8 +1,7 @@
 //This is the service worker with the Cache-first network
 
 var CACHE = 'pwabuilder-precache';
-var precacheFiles = [
-];
+var precacheFiles = [];
 
 //Install stage sets up the cache-array to configure pre-cache content
 self.addEventListener('install', function(evt) {
