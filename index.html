@@ -13,7 +13,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Weather PWA">
     <link rel="apple-touch-icon" href="https://diz36nn4q02zr.cloudfront.net/webapi/images/t/152/152/ShopIcon/88/0/184954">
-    <link rel="manifest" href="/pwa-poc/manifest.json">
+    <link rel="manifest" href="/workbox-poc/manifest.json">
     <!-- Universal Google Analytics Start -->
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="https://cms.cdn.91app.com/theme/0/master_58aec74/css/mobile.default.css">
     <link rel='stylesheet' href='https://cms.cdn.91app.com/contents/fonts/font-awesome.css' />
     <link rel='stylesheet' href='https://cms.cdn.91app.com/contents/icons/default/icon91.css' />
+    <link rel="stylesheet" href="/workbox-poc/index.css">
     <link rel='icon' href=https://diz36nn4q02zr.cloudfront.net/webapi/images/o/16/16/ShopFavicon/88/88favicon?v&#x3D;201809041557 />
     <link rel='shortcut icon' href=https://diz36nn4q02zr.cloudfront.net/webapi/images/o/16/16/ShopFavicon/88/88favicon?v&#x3D;201809041557 />
     <link rel="apple-touch-icon" href=//diz36nn4q02zr.cloudfront.net/webapi/images/t/512/512/ShopIcon/88/0/184954 />
@@ -126,7 +127,7 @@
     if (navigator.serviceWorker.controller) {
         console.log('[PWA Builder] active service worker found, no need to register')
     } else {
-        navigator.serviceWorker.register('/pwa-poc/sw.js', {
+        navigator.serviceWorker.register('/workbox-poc/sw.js', {
             scope: './'
         }).then(function(reg) {
             console.log('Service worker has been registered for scope:'+ reg.scope);
